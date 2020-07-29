@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+/* navbar styles */
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  background: linear-gradient(to bottom, #6495ED, #1ECBE1);
+  padding: 5px;
+  top: 0;
+  z-index: 4;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+#navbar a:hover {
+  text-decoration: underline;
+}
+
+
+/* welcome section  */
+
+#welcome-section {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #1ecbe1, #CCC);
+  text-align: center;
+}
+
+#welcome-section h1 {
+  color: #333;
+  padding-top: 30vh;
+  font-size: 4.5rem;
+}
+
+#welcome-section h2 {
+  padding-top: 50px;
+  font-size: 2.6rem;
+  color: royalblue;
+  font-style: italic;
+}
+
+/* project display section */
+#projects h3 {
+  color: #199d00;
+  font-family: monospace;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.description {
+  margin: 0 auto;
+  text-align: justify;
+  width: 60%;
+  font-size: 1.2em;
+  border: 3px #199d00 solid;
+  color: #008000;
+  background-color: rgba(123, 239, 178, .3);
+  padding: 14px;
+  margin-bottom: 40px;
+}
+
+.description a {
+  color: #008000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-container {
+  padding: 20px 100px;
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px 40px;
+
+  color: white;
+}
+
+.project-display {
+  border: 2px green solid;
+  position: relative;
+  height: 270px;
+  box-shadow: 9px 4px 29px -8px rgba(0,190,0,0.68);
+}
+
+.project-display:hover .project-overlay,
+.project-display:hover .project-info,
+.project-display:hover .project-title,
+.project-display:hover .project-view {
+  visibility: visible;
+}
+
+/* ISSUE: HOW TO ALIGN TITLE WHEN POSITIONED ABSOLUTE */
+
+.project-title {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  font-size: 1.3em;
+}
+
+.project-info {
+  visibility: hidden;
+  position: absolute;
+  top: 60px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.project-view {
+  visibility: hidden;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+
+  border-radius: 10px;
+  background-color: gray;
+  padding: 5px;
+}
+
+.project-view:hover {
+  border: white 2px solid;
+  padding: 3px;
+}
+
+.project-view a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-display img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-overlay {
+  visibility: hidden;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  position: absolute;
+}
+
+/* about me section  */
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #008000;
+}
+
+#about-me {
+  background-image:linear-gradient(#FFF 1%, #1b9fb1, #1b9fb1 );
+  min-height: 400px;
+  color: #FFF;
+}
+
+#about-me h3 {
+  padding-top: 250px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#information-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  /* grid-gap: 50px 40px; */
+  width: 60%;
+  margin: 0 auto 500px auto;
+}
+
+#information-container p {
+  font-size: 1.4rem;
+  letter-spacing: .15rem;
+}
+
+#information-container p a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 900;
+}
+
+#information-container p a:hover {
+  text-decoration: underline;
+}
+
+#information-container img {
+  border-radius: 20%;
+  width: 70%;
+  border: 5px solid #FFF;
+}
+

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diary</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="index">
+      <h2 id="index-title">INDEX</h2>
+      <a href="#day_one">
+        <div class="date_container">
+          <p>Day One.</p>
+          <p>(06/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_two">
+        <div class="date_container">
+          <p>Day Two.</p>
+          <p>(10/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_three">
+        <div class="date_container">
+          <p>Day Three.</p>
+          <p> (11/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_four">
+        <div class="date_container">
+          <p>Day Four. </p> 
+          <p>(13/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_five">
+        <div class="date_container">
+          <p>Day Five.</p>  
+          <p>(17/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_six">
+        <div class="date_container">
+          <p>Day Six.</p>
+          <p>(19/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_seven">
+        <div class="date_container">
+          <p>Day Seven.</p>
+          <p>(30/06/2020)</p>
+        </div>
+      </a>
+      <a href="#day_eight">
+        <div class="date_container">
+          <p>Day Eight.</p> 
+          <p>(07/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_nine">
+        <div class="date_container">
+          <p>Day Nine.</p>  
+          <p>(13/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_ten">
+        <div class="date_container">
+          <p>Day Ten.</p> 
+          <p>(14/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_eleven">
+        <div class="date_container">
+          <p>Day Eleven.</p> 
+          <p>(15/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_twelve">
+        <div class="date_container">
+          <p>Day Twelve.</p> 
+          <p>(20/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_thirteen">
+        <div class="date_container">
+          <p>Day Thirteen.</p> 
+          <p>(22/07/2020)</p>
+        </div>
+      </a>
+      <a href="#day_fourteen">
+        <div class="date_container">
+          <p>Day Fourteen.</p> 
+          <p>(28/07/2020)</p>
+        </div>
+      </a>
+
+    </div>
+    <div id="content">
+      <section id="day_one">
+        <h2>Day One. (06/06/2020)</h2>
+        <p>
+          Started Free Code Camp (FCC) today, I've been a member for a while but this time I intend to complete their
+          curriculum. I have so far finished the basic HTML section and have started the CSS section, to keep the 
+          concepts fresh I've begun several side projects too (<a href="#">this game</a> and <a href="#">these basic tutorials</a>). <br>
+          Now I'm learning styles with css, expect to see lots of absurd and tasteless color combinations and effects.  
+        </p>
+      </section>
+
+      <section id="day_two">
+        <h2>Day Two. (10/06/2020)</h2>
+        <h3 class="sub-header">Forms</h3>
+        <p>
+          To add a form to html we use the form tags: <br>
+          <code>&ltform&gt &lt/form&gt</code>
+          <br>
+          Inside a form, input tags can be added to get input from the user and a button tag can be used for the user to send the form: <br>
+          <code> &ltform&gt </code>
+             <code> &ltinput&gt &lt/input&gt </code>
+             <code> &ltbutton&gt Submit &lt/button&gt </code>
+          <code> &lt/form&gt </code>
+          
+          <br>
+          Inputs can take the form of radio buttons, check-boxes or single or multi-line text fields. Check it out!
+        </p>
+        <p>
+          Let's make a <strong> basic form </strong> that asks for a users name and opinion of our form. <br>
+          First we'd add the <strong> form tag </strong> and specify a location where we'd want the information provided by our user to be sent
+          for now we can set the location to a hashtag so that it is not sent anywhere. <br>
+          Next the <strong>input tag</strong> will be given a property of type set to "text" which surpriseing enough specifies what type of input to show.
+          We can then give the input placeholder text with the....placeholder property. <br>
+          Finally we would add the <strong> buttons</strong> with the relevant input tags and a submit button. The submit button should be given a type of
+          "submit". <br>
+          The code and resulting html can be seen below.
+        </p>
+        <p>
+          <code> &ltform action="#"&gt </code>
+             <code>&nbsp &ltlabel&gt Please Enter Your Name:&lt/label&gt  </code>
+             <code>&nbsp &ltinput type="text" placeholder="name" required&gt </code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp Would you reccomend this form?</code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp &ltlabel&gt</code>
+             <code>&nbsp&nbsp &ltinput type="radio"&gt Yes</code>
+             <code>&nbsp &lt/label&gt</code>
+             <code>&nbsp &ltlabel&gt</code>
+             <code>&nbsp&nbsp &ltinput type="radio"&gt No</code>
+             <code>&nbsp &lt/label&gt</code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp &ltbutton type="submit"&gtSubmit&lt/button&gt</code>
+          <code> &lt/form&gt </code>
+        </p>
+
+        <div id="example_code">
+          <form action="#">
+            <label>Please Enter Your Name:</label>
+            <input type="text" placeholder="name" required>
+            <br>
+            Would you recommend this form?
+            <br>
+            <label>
+              <input type="radio"> Yes
+            </label>  
+            <br>
+            <label>
+              <input type="radio"> No
+            </label>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <p>
+          Notice the <strong>label</strong> and <strong>br</strong> tags? It is considered best practice to wrap all inputs with such label tags
+          and br tags (breaks) add line space. <br> 
+          Also we can ensure the user provides with data in a certain field before submit by adding the <strong> required </strong> property. 
+          Try clicking submit without providing a name.
+        </p>
+
+        <hr>
+        <p>
+          There are <em>more</em> properties that should really be added to complete our form...
+          Can you see any problems with our form?? <br>
+          Try looking again. I'll wait. <br>
+          We can both recommend AND not recommend our form! What is this mayhem. <br> 
+          Well at the moment we haven't connected the radio buttons, as far the form is concerned they could be related to different
+          questions hence it would be very reasonable to be able to select both. Another issue might occur to you: <em>what exactly</em>
+          will be sent if the user opts for "yes" (or "no" &#128543 ), we haven't provided the code with any information on what to send 
+          for a selected radio button.  <br>
+          We can add a <strong>name attribute</strong> to each input; all inputs with the same name will be considered part of the
+          same family and so a user will not be able to select more than one radio button. We use the <strong>value attribute</strong>
+          to tell the form what information to send. 
+        </p>
+
+        <p>
+          <code> &ltform action="#"&gt </code>
+             <code>&nbsp &ltlabel for="username"&gt Please Enter Your Name:&lt/label&gt  </code>
+             <code>&nbsp &ltinput  id="username" type="text" name="username" placeholder="name" required&gt </code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp Would you reccomend this form?</code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp &ltlabel for="yes"&gt</code>
+             <code>&nbsp&nbsp &ltid="yes" type="radio" name="recommend" value="yes" checked&gt  Yes</code>
+             <code>&nbsp &lt/label&gt</code>
+             <code>&nbsp &ltlabel for="no"&gt</code>
+             <code>&nbsp&nbsp &ltid="yes" type="radio" name="recommend" value="no"&gt No</code>
+             <code>&nbsp &lt/label&gt</code>
+             <code>&nbsp &ltbr&gt</code>
+             <code>&nbsp &ltbutton type="submit"&gtSubmit&lt/button&gt</code>
+          <code> &lt/form&gt </code>
+        </p>
+
+        <div id="example_code">
+          <form action="#">
+            <label for="username">Please Enter Your Name:</label>
+            <input id="username" type="text" name="username" placeholder="name" required>
+            <br>
+            Would you recommend this form?
+            <br>
+            <label for="yes">
+              <input id="yes" type="radio" name="recommend" value="yes" checked> Yes
+            </label>  
+            <br>
+            <label for="no">
+              <input id="no" type="radio" name="recommend" value="no"> No
+            </label>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <p>
+          Try submitting data now and then check out the url at the top of the screen. You should be able to see useful information
+          has now be passed on for example <em>username="Dave"</em> and <em>recommend="yes"</em>. <br>
+          Also you can see how we've added a <strong>for tag</strong> to our labels and a <strong>unique id</strong> to the inputs, 
+          this associates the two (hover over the labels and see what happens). <br>
+          We've also added a cheeky <strong>checked property</strong> can you guess what that does?
+        </p>
+          
+      </section>
+
+      <section id="day_three">
+        <h2>Day Three. (11/06/2020)</h2>
+        <p>I finished the first of the Responsive Web Design Projects. <a href="https://codepen.io/lukeDreamtSloths/full/XWXdXoa"> Here it is</a>.</p>
+        <p>Does it seem familar?</p>
+        <p>I've met all the criteria, submitted it and have put it on the forums for feedback.</p>
+        <p>One Down. Four To Go</p>
+
+      </section>
+
+      <section id="day_four">
+        <h2>Day Four. (13/06/2020)</h2>
+        <p>I finished the tribute page project today. In the order given by FreeCodeCamp it's the
+          first project. Here is my attempt: <a href="https://codepen.io/lukeDreamtSloths/full/BajzWJv">
+          ta -da
+          </a>
+        </p>
+      </section>
+
+      <section id="day_five">
+        <h2>Day Five. (17/06/2020)</h2>
+        <p>
+          Made some progress on the Landing Page FCC challenge. FlexBox is 
+          giving me a headache. <em>Help!</em>
+        </p>
+        <p>
+          <strong>Also</strong>, The Coding Train is awesome and I've almost 
+          finished all his videos released so far on simulating reality
+          with p5 :)
+        </p>
+      </section>
+
+      <section id="day_six">
+        <h2>Day Six. (19/06/2020)</h2>
+        <p>
+          <a href="https://codepen.io/lukeDreamtSloths/full/NWxbyyQ">It is done.</a>
+          Lots of interesting concepts learnt with this one, how to (and how not to) use flexbox, 
+          how to add icons with fontAwesome, how to embed videos. <em>etc etc</em> 
+        </p>
+      </section>
+
+      <section id="day_seven">
+        <h2>Day Seven. (30/06/20)</h2>
+        <p>
+          Not been feeling well lately. Made some progress on the survey and portfolio pages. I've now
+          at least begun all the basic FCC projects :) 
+        </p>
+      </section>
+
+      <section id="day_eight">
+        <h2>Day Eight. (07/07/20)</h2>
+        <p>
+          I'm almost done with the personal portfolio 
+          (<a href="https://codepen.io/lukeDreamtSloths/full/ZEQxoqP">here</a>), once I've got this finished I will 
+          attempt to host it somewhere more permanent so I can use it to showcase all of my future work. 
+          It's the first project using grid layouts which are very useful and much more straightforward compared
+          with flexbox, I've also learnt how to create hover effects where the object being interacted with is not
+          the one being effected (can you see the message below? can you figure out how to hide it?).  
+        </p>
+        <div id="dissapearing_div">Can You See Me!</div>
+        <p>
+          Started contributing to the FCC forums too which is a great way of learning new concepts and it's very 
+          rewarding to help others <span>😀</span>.
+        </p>
+      </section>
+
+      <section id="day_nine">
+        <h2>Day Nine. (13/07/20)</h2>
+        <p>
+          It is done, <a href="https://codepen.io/lukeDreamtSloths/full/ZEQxoqP" target="_blank">check it out</a>. 
+          The FCC community gave me a lot of advice and I've tried developing it upon their suggestions. I'm using
+          github temporarily to host the images but once I learn more I will transfer them along with my sites to a 
+          more permanent location. 
+        </p>
+        <p>
+          Almost done with the front end projects now, just the survey form project and a few touch ups on the other ones
+          and that's it :D
+        </p>
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li>Add footers to all projects with a link to my portfolio </li>
+            <li>Complete Survey Form Project</li>
+            <li>Improve responsiveness of all projects for landscape viewing on handheld devices</li>
+            <li>Learn how to implement scroll snap</li>
+            <li>Format <i>this</i> to-do list</li>
+            <li>Fix the overly large nav bar on the landing page project</li>
+            <li>Finish JS temperature side project</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="day_ten">
+        <h2>Day Ten. (14/07/20)</h2>
+        <p>
+          The survey form is done. All projects finished! Just some touch ups left to do and then I can submit
+          them for the first certificate. <a href="https://codepen.io/lukeDreamtSloths/full/LYGJbyK">Here's</a> 
+          my Survey Form. From now on I'm going to be maintaining a to-do list of my current goals.
+        </p>
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li>Add footers to all projects with a link to my portfolio </li>
+            <li class="completed_list_item">Complete Survey Form Project</li>
+            <li>Check responsiveness of all projects for landscape viewing on handheld devices</li>
+            <li>Learn how to implement scroll snap</li>
+            <li class="completed_list_item">Format <i>this</i> to-do list</li>
+            <li class="completed_list_item">Fix the overly large nav bar on the landing page project</li>
+            <li>Finish JS temperature side project</li>
+            <li class="completed_list_item">One website a day</li>
+            <li class="completed_list_item">Add survey project to portfolio</li>
+            <li>Run all projects through W3C checker</li>
+            <li>Add index for smaller screens on Technical Documentation project</li>
+            <li class="completed_list_item">Align index on <i>this</i> website</li>
+            <li>Change animation when hovering over "Add To Cart" on Landing Page</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="day_eleven">
+        <h2>Day Eleven. (15/07/20)</h2>
+        <p>
+          So having checked my projects on my phone in landscape mode I've noticed they all look 
+          <strong>terrible</strong>, my next goal before submiting my portfolio then is to find a method of viewing my projects
+          as seen through a variety of different devices.
+        </p>
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li>Add footers to all projects with a link to my portfolio </li>
+            <li class="completed_list_item">Check responsiveness of all projects for landscape viewing on handheld devices</li>
+            <li>Learn how to implement scroll snap</li>
+            <li class="completed_list_item">Finish JS temperature side project</li>
+            <li class="completed_list_item">Run all projects through W3C checker</li>
+            <li>Add index for smaller screens on Technical Documentation project</li>
+            <li>Change animation when hovering over "Add To Cart" on Landing Page</li>
+            <li class="completed_list_item">One Website a day</li>
+            <li class="completed_list_item">Adjust alignment of Tribute Page</li>
+            <li>Find a website that lets me view my projects as from many different devices </li>
+            <li>Use JS to make elements shrink and expand when they are clicked on for <em>this</em> website</li>
+            <li class="completed_list_item">Add another projects section to portfolio website</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="day_twelve">
+        <h2>Day Twelve. (20/07/29)</h2>
+        <p>
+          I've moved my entire portfolio to github pages. For now this will do as an accpetable place to keep my work. It is far easier to maintain a local and online copy with github and it is more pleasant for viewing the websites.
+        </p>
+
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li>Add footers to all projects with a link to my portfolio </li>
+            <li>Learn how to implement scroll snap</li>
+            <li>Add index for smaller screens on Technical Documentation project</li>
+            <li>Change animation when hovering over "Add To Cart" on Landing Page</li>
+            <li>Find a website that lets me view my projects as from many different devices </li>
+            <li>Use JS to make elements shrink and expand when they are clicked on for <em>this</em> website</li>
+            <li class="completed_list_item">Move websites to github pages</li>
+            <li>Make sure all links and folders for imgs on Github are consistent</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="day_thirteen">
+        <h2>Day Thirteen. (22/07/20)</h2>
+        <p>
+          Figured out that I can just use the developer tools to examine how each project looks on any device- <em>so that's neat </em>. I've also started working through the basic JS algorithm challenges.  
+        </p>
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li class="completed_list_item">Add footers to all projects with a link to my portfolio </li>
+            <li>Learn how to implement scroll snap</li>
+            <li>Add index for smaller screens on Technical Documentation project</li>
+            <li>Change animation when hovering over "Add To Cart" on Landing Page</li>
+            <li class="completed_list_item">Find a website that lets me view my projects as from many different devices </li>
+            <li>Use JS to make elements shrink and expand when they are clicked on for <em>this</em> website</li>
+            <li>Finish Basic Algorithm Challnges</li>
+            <li>Finish the website based off of the design principles I have learnt</li>
+            <li>Have github integration up and running 100%</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="day_fourteen">
+        <h2>Day Fourteen. (28/07/2020)</h2>
+        <p>
+          I've finsihed three of the Javascript projects: a Palindrome Checker, Phone Number Validator and a Caesars Cipher. I'm on small websites to demonstrate these projects but for now my main goal is tidy up the Responsive Projects before submitting them so I can finally get my first certificate :D 
+        </p>
+        <div class="to_do_list_container">
+          <h3 class="to_do_list_title">To-do list</h3>
+          <ul class="to_do_list">
+            <li>Learn how to implement scroll snap</li>
+            <li>Add index for smaller screens on Technical Documentation project</li>
+            <li>Change animation when hovering over "Add To Cart" on Landing Page</li>
+            <li>Use JS to make elements shrink and expand when they are clicked on for <em>this</em> website</li>
+            <li class="completed_list_item">Finish Basic Algorithm Challnges</li>
+            <li>Finish the website based off of the design principles I have learnt</li>
+            <li class="completed_list_item">Have github integration up and running 100%</li>
+            <li>Finish JS Algorithms and Data Structures Projects (3/5 Complete)</li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        Luke Ayres 2020
+        <br>
+        <a href="#content">Jump to top</a>   
+      </footer>
+      
+      
+    </div>
+  </body>
+</html>

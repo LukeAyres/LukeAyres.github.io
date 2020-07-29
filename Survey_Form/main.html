@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media_queries.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Roboto&display=swap" rel="stylesheet"> 
+  <title>Souls</title>
+</head>
+<body>
+  <!-- TITLE -->
+  <h1 id="header">Dark Souls Reimbursement Form</h1>
+  <!-- FORM EXPLANATION -->
+  <main>  
+    <div id="top">
+      <div id="decription">
+        <p>
+          Have you recently lost souls in an accident that wasn't your fault? <em>Yes?!</em> Then you might be 
+          entitled to a claim.
+        </p>
+        <p class="underline">
+          Contact us now.
+        </p>
+      </div>
+    </div> 
+   <!-- FORM -->
+    <form action="#" id="survey-form">
+      <!-- NAME -->
+      <div class="form-section" id="name_section">
+        <label for="username" id="name-label">Username:</label>
+        <input type="text" name="username" placeholder="Sun Bro" id="username" required>
+      </div>
+      <!-- EMAIL -->
+      <div class="form-section" id="email_section">
+        <label for="email" id="email-label">Email Address:</label>
+        <input type="email" name="email" placeholder="sentinel@mail.com" id="email" required>
+      </div>
+      <!-- SOULS -->
+      <div class="form-section" id="souls-section">
+        <label for="souls" id="number-label">Souls Lost:</label>
+        <input type="number" name="souls" min="10000" max="1000000" placeholder="100000" id="souls" required>
+      </div>
+      <!-- REASON / DROP BOX -->
+      <div class="form-section" id="reason-section">
+        <label for="reason" id="reason-label">How did you lose them?</label>
+        <select name="reason" id="reason" required>
+          <option value="">-- Choose an option -- </option>
+          <option value="i_tried_jumping">
+            I tried jumping
+          </option>
+          <option value="invasion">
+            Invasion
+          </option>
+          <option value="mad_phantom">
+            Mad Phantom
+          </option>
+          <option value="death_by_stun_lock">
+            Death By Stun Lock
+          </option>
+          <option value="unreasonable_boss">
+            Unreasonable Boss
+          </option>
+        </select>
+      </div>
+      <!-- COVENANT /  RADIO BUTTONS   -->
+      <div class="form-section" id="covenant">
+        <label>Covenant:</label>
+        <div class="button-layout">
+          <input type="radio" id="sunlight" name="covenant" value="sunlight">
+          <label for="sunlight">Warrior Of Sunlight</label>
+
+          <input type="radio" id="blue" name="covenant" value="blue">
+          <label for="blue">Blue Sentinels</label>
+
+          <input type="radio" id="white" name="covenant" value="white">
+          <label for="white">Way Of The White</label>
+
+          <input type="radio" id="gravelord_servant" name="covenant" value="gravelord_servant">
+          <label for="gravelord_servant">Gravelord Servant</label>
+
+          <input type="radio" id="forest_hunter" name="covenant" value="forest_hunter">
+          <label for="forest_hunter">Forest Hunter</label>
+        </div>
+      </div>
+      <!-- LOCATIONS / CHECKBOXES -->
+      <div class="form-section">
+        <label>Where can we find you? (please check all that apply)</label>
+        <div class="button-layout">
+          <input type="checkbox" id="forest_of_fallen_giants" name="locations" value="forest_of_fallen_giants">
+          <label for="forest_of_fallen_giants">Forest of Fallen Giants</label>
+
+          <input type="checkbox" id="majula" name="locations" value="majula">
+          <label for="majula">Majula</label>
+
+          <input type="checkbox" id="heides_tower_of_flame" name="locations" value="heides_tower_of_flame">
+          <label for="heides_tower_of_flame">Heide's Tower Of Flame</label>
+
+          <input type="checkbox" id="the_lost_bastille" name="locations" value="the_lost_bastille">
+          <label for="the_lost_bastille">The Lost Bastille</label>
+
+          <input type="checkbox" id="belfry_luma" name="locations" value="belfry_luma">
+          <label for="belfry_luma">Belfry Luma</label>
+
+          <input type="checkbox" id="sinners_rise" name="locations" value="sinners_rise">
+          <label for="sinners_rise">Sinner's Rise</label>
+
+          <input type="checkbox" id="iron_keep" name="locations" value="iron_keep">
+          <label for="iron_keep">Iron Keep</label>
+
+          <input type="checkbox" id="drangleic_castle" name="locations" value="drangleic_castle">
+          <label for="drangleic_castle">Drangleic Castle</label>
+        </div>
+      </div>
+      <!-- DESCRIBE YOUR PROBLEM / TEXT AREA -->
+      <div class="form-section">
+        <label for="describe">Please describe what happened</label>  
+        <textarea name="describe" id="describe"  rows="10"></textarea>
+      </div>
+      <!-- SUBMIT -->
+      <div id="submit-section">
+        <input type="submit" name="submit" id="submit" value="submit">
+      </div>
+      
+    </form>
+
+  </main>
+
+  <footer>
+    <div>
+      See all of my projects on my <a href="https://lukeayres.github.io./#projects">home_page</a>
+    </div>
+    <div id="footer_author">
+      By Luke Ares
+    </div>
+  </footer>
+
+</body>
+</html>

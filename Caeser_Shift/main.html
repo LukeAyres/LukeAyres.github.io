@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">  -->
+  <title>Cryptic Caesar</title>
+</head>
+<body>
+  <h1>Caesar Shifter App</h1>
+  <form id="textbox_form">
+    <div id="textarea_container">
+      <textarea rows="12" id="textbox" placeholder="Enter your message to hide or decipher"></textarea>
+      <textarea rows="12" id="shifted_textbox" disabled></textarea>
+    </div>
+    <input type="range" min="0" max="26" value="0" id="shifter">
+    <div id="shifter_value">0</div>
+  </form>
+  <script src="main.js"></script>
+
+
+</body>
+</html>
