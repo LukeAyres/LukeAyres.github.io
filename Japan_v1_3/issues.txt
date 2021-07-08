@@ -1,0 +1,2 @@
+1 ) there may be multiple correct answers
+2 ) multiple JS files may simplify project

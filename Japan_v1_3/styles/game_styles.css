@@ -1,0 +1,54 @@
+#game_container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+#score {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#question_word {
+  text-align: center;
+}
+
+#app_form  {
+  margin-bottom: 40px;
+}
+
+#app_input{
+  background-color: rgb(136, 72, 114);
+  color: aliceblue;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#app_form input[type=submit]{
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: wheat;
+}
+
+#answer_container {
+  height: 120px;
+  color: green;
+}
+
+
+#change_mode_container #change_to_title, #change_mode_container form{
+  display: inline;
+}
+
+#change_mode_container form input[type=submit] {
+  width: 50%;
+  float: right;
+  background-color: wheat;
+
+}
+
+#change_mode_container h4{
+
+}

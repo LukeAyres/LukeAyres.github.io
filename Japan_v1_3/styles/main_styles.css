@@ -1,0 +1,17 @@
+#apps_container{
+  min-height: 1000px;
+  padding-top: 50px;
+}
+
+.app_container{
+  padding: 5px;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  background-color: rgba(180, 130, 169, 0.7);
+  border: 2px solid rgb(33, 36, 80)
+}
+
+.app_container:hover{
+  background-color: rgba(180, 130, 169, 1);
+}
