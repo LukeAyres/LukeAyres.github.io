@@ -17,7 +17,18 @@ word_arr = [
   ['れいぞこう', 'fridge'],
   ['いもうと', 'younger sister'],
   ['おとうお', 'younger brother'],
-  ['みずぎ', 'swimsuit']
+  ['みずぎ', 'swimsuit'],
+  ['おふる', 'bath'],
+  ['にわ', 'garden'],
+  ["ひこうき", 'plane'],
+  ['いぞがしい', 'busy'],
+  ['おきる', 'to awake'],
+  ['ねる', 'to sleep']
+  // ['', ''],
+  // ['', ''],
+  // ['', ''],
+  // ['', ''],
+  // ['', ''],
 ];
 
 
@@ -79,14 +90,15 @@ function setWord() {
 
 function checkWord(){
   // check if attempt is correct
+  let attempt = form.elements.app_input.value.toLowerCase()
   if (japan_to_eng) {
-    if (eng_words[currentWordIndex] === (form.elements.app_input.value)) {
+    if (eng_words[currentWordIndex] === attempt) {
       correct++
     }  else {
       showAnswer()
     }
   } else {
-    if (japan_words[currentWordIndex] === (form.elements.app_input.value)) {
+    if (japan_words[currentWordIndex] === attempt) {
       correct++
     } else {
       showAnswer()
