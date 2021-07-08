@@ -90,20 +90,21 @@ function setWord() {
 
 function checkWord(){
   // check if attempt is correct
+  let answer_correct = false
   let attempt = form.elements.app_input.value.toLowerCase()
   if (japan_to_eng) {
     if (eng_words[currentWordIndex] === attempt) {
       correct++
-    }  else {
-      showAnswer()
+      answer_correct = true
     }
+
   } else {
     if (japan_words[currentWordIndex] === attempt) {
       correct++
-    } else {
-      showAnswer()
+      answer_correct = true
     }
   }
+  showAnswer(answer_correct)
   rounds++
 }
 
@@ -111,10 +112,14 @@ function updateScore() {
   document.getElementById("score").innerHTML= 'Score: ' + correct + '/' + rounds
 }
 
-function showAnswer(){
+function showAnswer(answer_correct){
   let aC = document.getElementById('answer_container');
-  if (japan_to_eng) {
+  if (answer_correct) { 
+    aC.innerHTML ="" 
+  } else if (japan_to_eng) {
     aC.innerHTML = "the correct answer was '" + eng_words[currentWordIndex] + "'"
+  }　else  {
+    aC.innerHTML = "the correct answer was '" + japan_words[currentWordIndex] + "'"
   }
 }
 
